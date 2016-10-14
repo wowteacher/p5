@@ -6,6 +6,7 @@
 // Francesca 14 Sept 2016
 //Coding challenge #38 word interactor
 // ciao io sono clonato
+// dopo aver usato git clone (push) provo a sincronizzare la copia sul computer
 
 var textfield;
 var output;
