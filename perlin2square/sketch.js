@@ -35,7 +35,7 @@ function draw() {
 		d = d + t;
 	} else {
 		t = t - 0.004;		
-		d = d - t;
+		d = d + t;
 	}
 	if (mouseIsPressed) {
 		stroke(r, g, b, 15);
