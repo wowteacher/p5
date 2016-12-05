@@ -28,10 +28,10 @@ function draw() {
 	//fill(r, g, b, 3);
 	fill(255, 5);
 	
-	//t = t + 0.003;
+	t = t + 0.0003;
 	//aggiungere un if per invertire il flusso
 	if (d < 50) {
-		t = t + 0.005;
+		t = t + 0.0005;
 		d = d + t;
 	} else {
 		t = t - 0.003;		
