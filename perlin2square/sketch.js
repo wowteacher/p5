@@ -8,15 +8,12 @@ function setup() {
 	t = 0;
 
 	// clear the background every 500 frames using mod (%) operator
-
-
 }
 
 function draw() {
 	// fade the background by giving it a low opacity
 	//background(90, 90, 110, 3);
 	//background(250, 5);
-
 
 	var x = width * noise(t);
 	var y = height * noise(t + 20);
@@ -31,14 +28,14 @@ function draw() {
 	//fill(r, g, b, 3);
 	fill(255, 5);
 	
-
-
-	t = t + 0.003;
+	//t = t + 0.003;
 	//aggiungere un if per invertire il flusso
 	if (d < 50) {
+		t = t + 0.003;
 		d = d + t;
 	} else {
-		d = d * -1;
+		//t = t* -1;		
+		d = d - t;
 	}
 	if (mouseIsPressed) {
 			stroke(r, g, b, 15);
