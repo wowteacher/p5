@@ -31,10 +31,10 @@ function draw() {
 	//t = t + 0.003;
 	//aggiungere un if per invertire il flusso
 	if (d < 50) {
-		t = t + 0.004;
+		t = t + 0.005;
 		d = d + t;
 	} else {
-		t = t - 0.004;		
+		t = t - 0.003;		
 		d = d + t;
 	}
 	if (mouseIsPressed) {
