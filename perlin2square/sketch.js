@@ -5,9 +5,7 @@ function setup() {
 	frameRate(30);
 	createCanvas(windowWidth, windowHeight);
 	//background(0, 7);
-	t = 0;
-
-	
+	t = 0;	
 }
 
 function draw() {
@@ -41,7 +39,7 @@ function draw() {
 		//stroke(r, g, b, 15);
 		//rectMode(CENTER);
 		//rect(x, y,  d,  d);
-		background (255);
+		background (255, 2);
 		t = t + 0.003;
 		
 	}
@@ -52,11 +50,9 @@ function draw() {
 		
 	}
 	
-	
-	
 	// clear the background every 500 frames using mod (%) operator
-	if (frameCount % 900 === 0) {
-    	background(255, 0, 0);
+	if (frameCount % 500 === 0) {
+    	background(30, 200, 150);
     
   }
 }
