@@ -28,7 +28,7 @@ function draw() {
 	//fill(r, g, b, 3);
 	fill(255, 5);
 	
-	t = t + 0.003;
+	
 	//aggiungere un if per invertire il flusso
 	if (d < 50) {
 		t = t + 0.0005;
@@ -50,6 +50,8 @@ function draw() {
 		ellipse(x, y,  d,  d);
 		
 	}
+	
+	t = t + 0.003;
 	
 	// clear the background every 500 frames using mod (%) operator
 	 if (frameCount % 900 === 0) {
