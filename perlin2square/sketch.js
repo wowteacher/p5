@@ -34,7 +34,7 @@ function draw() {
 		t = t + 0.004;
 		d = d + t;
 	} else {
-		//t = t* -1;		
+		t = t* -1;		
 		d = d - t;
 	}
 	if (mouseIsPressed) {
