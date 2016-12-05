@@ -7,7 +7,7 @@ function setup() {
 	//background(0, 7);
 	t = 0;
 
-	// clear the background every 500 frames using mod (%) operator
+	
 }
 
 function draw() {
@@ -15,8 +15,8 @@ function draw() {
 	//background(90, 90, 110, 3);
 	//background(250, 5);
 
-	var x = width * noise(t);
-	var y = height * noise(t + 20);
+	var x = width * noise(t + 3);
+	var y = height * noise(t + 7);
 	var r = 255 * noise(t + 19);
 	var g = 255 * noise(t + 7);
 	var b = 255 * noise(t + 15);
@@ -31,24 +31,31 @@ function draw() {
 	//t = t + 0.003;
 	//aggiungere un if per invertire il flusso
 	if (d < 50) {
-		t = t + 0.003;
+		t = t + 0.004;
 		d = d + t;
 	} else {
 		//t = t* -1;		
 		d = d - t;
 	}
 	if (mouseIsPressed) {
-			stroke(r, g, b, 15);
+		stroke(r, g, b, 15);
+		rectMode(CENTER);
 		rect(x, y,  d,  d);
 		//background (255);
 		
 	}
 	else {
-			stroke(r, g, b, 90);
-			rectMode(CENTER);
-		ellipse(1+x, 1+y,  d,  d);
+		stroke(r, g, b, 90);
+		rectMode(CENTER);
+		ellipse(x, y,  d,  d);
 		
 	}
+	
+	// clear the background every 500 frames using mod (%) operator
+	 if (frameCount % 900 === 0) {
+    	background(255, 7);
+    	stroke(255, 0, 0, 15);
+  }
 }
 
 
