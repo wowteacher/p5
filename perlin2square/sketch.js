@@ -36,10 +36,10 @@ function draw() {
 		d = d + t;
 	}
 	if (mouseIsPressed) {
-		//stroke(r, g, b, 15);
-		//rectMode(CENTER);
-		//rect(x, y,  d,  d);
-		background (255, 2);
+		stroke(r, g, b, 15);
+		rectMode(CENTER);
+		rect(x, y,  d,  d);
+		background (255, 1);
 		t = t + 0.003;
 		
 	}
@@ -52,7 +52,7 @@ function draw() {
 	
 	// clear the background every 500 frames using mod (%) operator
 	if (frameCount % 500 === 0) {
-    	background(30, 200, 150);
+    	background(30, 200, 150,2);
     
   }
 }
